@@ -103,6 +103,7 @@ public static void cine () {
     int p = 3;
     int q = n + o / p * b - e / p;
     System.out.println("rezultatul operatiei este:"+ q);*/
+     /*
 
         System.out.println("rezultatul adunarii este: " + adunare());
         System.out.println("rezultatul scaderii este: " + scadere());
@@ -132,6 +133,12 @@ public static int impartire () {
         int a = 950;
         int b = 5;
         int result = a / b;
-        return result;
+        return result;*/
+
+        System.out.println("   J     A    V     V     A    ");
+        System.out.println("   J    A A    V   V     A A   ");
+        System.out.println("J  J   AAAAA    V V     AAAAA  ");
+        System.out.println(" JJ   A     A    V     A     A ");
+
 }
 }
