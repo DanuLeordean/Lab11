@@ -47,9 +47,7 @@ public class Main {
         int p = 3;
         int q = n + o / p * b - e / p;
         System.out.println("rezultatul operatiei este:"+ q);*/
-
-
-        ala();
+      /*  ala();
         ba();
         la();
         por();
@@ -104,6 +102,36 @@ public static void cine () {
     int b = 2;
     int p = 3;
     int q = n + o / p * b - e / p;
-    System.out.println("rezultatul operatiei este:"+ q);
+    System.out.println("rezultatul operatiei este:"+ q);*/
+
+        System.out.println("rezultatul adunarii este: " + adunare());
+        System.out.println("rezultatul scaderii este: " + scadere());
+        System.out.println("rezultatul inmultirii este: " + inmultire());
+        System.out.println("rezultatul impartirii este: " + impartire());
+}
+public static int adunare() {
+
+        int a = 534;
+        int b = 356;
+        int result = a + b;
+        return result;
+}
+public static int scadere() {
+        int a = 957;
+        int b = 379;
+        int result = a - b;
+        return result;
+}
+public static int inmultire() {
+        int a = 78;
+        int b = 339;
+        int result = a * b;
+        return result;
+}
+public static int impartire () {
+        int a = 950;
+        int b = 5;
+        int result = a / b;
+        return result;
 }
 }
