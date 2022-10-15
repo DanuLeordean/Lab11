@@ -134,11 +134,19 @@ public static int impartire () {
         int b = 5;
         int result = a / b;
         return result;*/
-
+    /*
         System.out.println("   J     A    V     V     A    ");
         System.out.println("   J    A A    V   V     A A   ");
         System.out.println("J  J   AAAAA    V V     AAAAA  ");
-        System.out.println(" JJ   A     A    V     A     A ");
+        System.out.println(" JJ   A     A    V     A     A ");*/
 
+        System.out.println("media celor 3 numere este:" + media());
+}
+public static int media () {
+        int a = 10;
+        int b = 20;
+        int c = 30;
+        int result = (a+b+c)/2;
+        return result;
 }
 }
