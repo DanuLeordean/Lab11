@@ -155,14 +155,15 @@ public static int media () {
         System.out.println("  |  ^  | ");
         System.out.println("  | '-' | ");
         System.out.println("  +-----+ ");*/
-        System.out.println("rezultatul operatiei care arata restul impartirii a celor doua numere este: " + impartire());
+        /*      System.out.println("rezultatul operatiei care arata restul impartirii a celor doua numere este: " + impartire());
 }
 public static float impartire () {
 
         float first = 75;
         float second = 23;
         float result = first / second;
-        return result;
+        return result;*/
 }
+
 
 }
