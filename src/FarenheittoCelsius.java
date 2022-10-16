@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class CalculatorFtoC {
+public class FarenheittoCelsius {
 
     public static void main(String[] args) {
 
@@ -13,7 +13,7 @@ public class CalculatorFtoC {
         if (result ==1) {
             //calculate Farenheit to Celsius
 
-            System.out.println("you have chosen Farenheit to Celsius");
+            System.out.println("You have chosen Farenheit to Celsius");
             System.out.println("Enter Farenheit Value: ");
             double value = scan.nextDouble();
             double valueFinal = (value - 32) *5/9;
