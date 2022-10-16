@@ -147,14 +147,22 @@ public static int media () {
         int c = 30;
         int result = (a+b+c)/2;
         return result;*/
-
-
+  /*
 
 
         System.out.println("  +'''''+ ");
         System.out.println(" [| o o |]");
         System.out.println("  |  ^  | ");
         System.out.println("  | '-' | ");
-        System.out.println("  +-----+ ");
+        System.out.println("  +-----+ ");*/
+        System.out.println("rezultatul operatiei care arata restul impartirii a celor doua numere este: " + impartire());
 }
+public static float impartire () {
+
+        float first = 75;
+        float second = 23;
+        float result = first / second;
+        return result;
+}
+
 }
