@@ -20,6 +20,7 @@ public class Main3 {
       //  logicalop.numereImparePanaLa100(number);
       // System.out.println(logicalop.averageFromNumberToNumber(111, 8899));
        // logicalop.fibonacci();
+        // logicalop.cozaLozaWoza(110, 11);
 
     }
 }
