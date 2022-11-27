@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class LogicalOperations {
 
     public int getGreaterNumber(int first, int second) {
@@ -69,35 +71,16 @@ public class LogicalOperations {
 
     public void switchCase(int numberInput) {
         switch (numberInput) {
-            case 1:
-                System.out.println("The number is:  1 !");
-                break;
-            case 2:
-                System.out.println("The number is:  2 !");
-                break;
-            case 3:
-                System.out.println("The number is:  3 !");
-                break;
-            case 4:
-                System.out.println("The number is:  4 !");
-                break;
-            case 5:
-                System.out.println("The number is:  5 !");
-                break;
-            case 6:
-                System.out.println("The number is:  6 !");
-                break;
-            case 7:
-                System.out.println("The number is:  7 !");
-                break;
-            case 8:
-                System.out.println("The number is:  8 !");
-                break;
-            case 9:
-                System.out.println("The number is:  9 !");
-                break;
-            default:
-                System.out.println("The number is not between 1-9 !");
+            case 1: System.out.println("The number is:  1 !"); break;
+            case 2: System.out.println("The number is:  2 !"); break;
+            case 3: System.out.println("The number is:  3 !"); break;
+            case 4: System.out.println("The number is:  4 !"); break;
+            case 5: System.out.println("The number is:  5 !"); break;
+            case 6: System.out.println("The number is:  6 !"); break;
+            case 7: System.out.println("The number is:  7 !"); break;
+            case 8: System.out.println("The number is:  8 !"); break;
+            case 9: System.out.println("The number is:  9 !"); break;
+            default: System.out.println("The number is not between 1-9 !");
         }
     }
 
@@ -237,5 +220,153 @@ public class LogicalOperations {
             i++;
         }
     }
+     public int getIndexForValue (int[] array, int value) {
+        for (int i = 0; i< array.length; i++){
+            if (array[i] == value) {
+                return i;
+            }
+        }
+        return - 1;
+     }
+
+      public void printCLW () {
+          int i = 1;
+          while (i <= 110) {
+
+              if (i % 3 == 0 && i % 5 == 0 & i % 7 == 0) {
+                  System.out.print("CozaLozaWoza ");
+              } else if (i % 3 == 0 && i % 5 == 0) {
+                  System.out.print("CozaLoza ");
+              } else if (i % 3 == 0 && i % 7 == 0) {
+                  System.out.print("CozaWoza ");
+              } else if (i % 5 == 0 && i % 7 == 0) {
+                  System.out.print("LozaWoza ");
+              } else if (i % 3 == 0) {
+                  System.out.print("Coza ");
+              } else if (i % 5 == 0) {
+                  System.out.print("Loza ");
+              } else if (i % 7 == 0) {
+                  System.out.print("Woza ");
+              } else {
+                  System.out.print(i + " ");
+              }
+              if (i % 11 == 0) {
+                  System.out.println();
+              }
+
+              i++;
+
+          }
+      }
+      public float getaveragenumberininterval (int first, int second){
+        float sum = 0;
+        int count = 0;
+        while (first <= second){
+            if(first%7==0){
+                sum+=first;
+                count++;
+            }
+            first++;
+        }
+        return sum/count;
+
+      }
+      public int[] getArrayOfValues (int positions){
+          int[] myArray = new int[positions];
+
+          for (int i = 0; i< myArray.length; i++){
+              myArray[i] = i + 1;
+          }
+          return myArray;
+      }
+      public void printArray(int [] myArray){
+          for (int i = 0; i < myArray.length; i++) {
+              System.out.print(myArray[i]+ " ");
+          }
+      }
+      public float getAverrageFromArray(int[] myArray){
+        float sum = 0;
+        for (int i = 0; i < myArray.length; i++){
+            sum +=myArray[i];
+        }
+        return sum/myArray.length;
+      }
+
+      public int gettIndexForValue(int[] myArray, int value){
+
+        for (int i = 0; i< myArray.length; i++){
+            if( myArray[i]== value){
+                return i;
+            }
+        }
+        return -1;
+      }
+
+      public void printListFromNumber(List<Integer> myList, int number) {
+        for(int i = number; i < myList.size(); i++){
+              System.out.println(myList.get(i));
+              if (myList.get(i)==55){
+                  myList.remove(i);
+              }
+          }
+      }
+
+      public void addStringToList ( List<String> myList, int position, String text){
+        myList.add(position, text);
+      }
+
+      public boolean verifyTextInList (List<String> myList, String text){
+        for(String x:myList){
+            if (x.equals(text)){
+                return true;
+            }
+        }
+        return false;
+      }
+
+      public void printList (List<String> myList){
+        for (int i =0; i< myList.size();i++){
+            System.out.println(myList.get(i));
+        }
+      }
+      public void addNumberToList( List<Integer> myList, int number){
+        myList.add(number);
+      }
+
+      public void printListByIndex (List<Integer> myList, int position){
+        for( int i = position; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
+      }
+
+      public void printListReversed(List<Integer> myList){
+        for (int i = myList.size()-1;i>0; i--){
+            System.out.println(myList.get(i));
+        }
+      }
+      public void addStringToMyList (List<String> myList, int index, String text){
+        myList.add(index, text);
+      }
+
+      public void addNumberToFirstIndex(List<Integer> myList, int number){
+        myList.add(0,number);
+      }
+
+      public void printListIndexAndElements (List<Integer> myList) {
+        for (int i = 0; i<myList.size(); i++){
+            System.out.println("Pe pozitia "+i+" este elementul "+ myList.get(i));
+        }
+      }
+
+      public int getBiggestValueFromList (List<Integer> myList){
+        int biggest = myList.get(0);
+        for (int i =0; i< myList.size(); i++){
+            if(myList.get(i) > biggest){
+                biggest =myList.get(i);
+            }
+        }
+        return biggest;
+      }
+
 
     }

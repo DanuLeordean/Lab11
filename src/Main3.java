@@ -22,5 +22,7 @@ public class Main3 {
        // logicalop.fibonacci();
         // logicalop.cozaLozaWoza(110, 11);
 
+        System.out.println(logicalop.getaveragenumberininterval(1,222));
+
     }
 }
