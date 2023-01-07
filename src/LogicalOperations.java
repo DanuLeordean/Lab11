@@ -368,5 +368,21 @@ public class LogicalOperations {
         return biggest;
       }
 
+    public void readArrayIndex(int[] array, int number){
+        try{
+            System.out.println(array[number]);
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Inside catch, number too large");
+        }
+    }
+
+    public void wait(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     }
